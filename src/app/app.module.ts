@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { ArtComponent } from './art/art.component';
 import { CodeComponent } from './code/code.component';
 import { HomeComponent } from './home/home.component';
+import { HeaderComponent } from './header/header.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ArtComponent,
     CodeComponent,
-    HomeComponent
+    HomeComponent,
+    HeaderComponent
   ],
   imports: [
     BrowserModule.withServerTransition({appId: 'portfolio'}),
