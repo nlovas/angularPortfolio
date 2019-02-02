@@ -7,6 +7,10 @@ import { ArtComponent } from './art/art.component';
 import { CodeComponent } from './code/code.component';
 import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './header/header.component';
+import { CodeProjectComponent } from './codeProject/codeProject.component';
+import { ArtProjectComponent } from './artProject/artProject.component';
+import { FooterComponent } from './footer/footer.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +18,11 @@ import { HeaderComponent } from './header/header.component';
     ArtComponent,
     CodeComponent,
     HomeComponent,
-    HeaderComponent
+    HeaderComponent,
+    CodeProjectComponent,
+    ArtProjectComponent,
+    FooterComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule.withServerTransition({appId: 'portfolio'}),
