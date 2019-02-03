@@ -22,15 +22,15 @@ export class ProjectService {
     private http: HttpClient // private transferState: TransferState, //@Inject(PLATFORM_ID) private platformId
   ) {}
 
-  getCodeProjects() {
-    /*: Observable<Program[]> {
-    return this.http.get<Program[]>(ProjectService.codeUrl);*/
-    return this.http.get(ProjectService.codeUrl);
+  getCodeProjects(): Observable<Program[]> {
+    return this.http.get<Program[]>(ProjectService.codeUrl);
   }
 
+  //this is for testing purposes only
+  /*
   getConfigResponse(): Observable<HttpResponse<Config>> {
     return this.http.get<Config>(ProjectService.codeUrl, {
       observe: "response"
     });
-  }
+  }*/
 }
