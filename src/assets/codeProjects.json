@@ -1,0 +1,22 @@
+{
+  "Projects": [
+    {
+      "id": 0,
+      "title": "example",
+      "date": "winter 2019",
+      "technologies": "angular universal, typescript, express, html, css",
+      "images": ["assets/img.png"],
+      "description": "i made this website",
+      "sourceCode": "www.google.ca"
+    },
+    {
+      "id": 1,
+      "title": "example2222222",
+      "date": "winter 2019",
+      "technologies": "angular universal, typescript, express, html, css",
+      "images": ["assets/img.png"],
+      "description": "i made this website",
+      "sourceCode": "www.google.ca"
+    }
+  ]
+}
