@@ -1,1 +1,7 @@
-This is the code page!
+<span>Hello code page!</span>
+<ng-container *ngIf="projects.length > 0">
+  <div class="projectContainer" *ngFor="let project of projects">
+    hi? {{ project.id }}
+    <codeProject [program]="project"></codeProject>
+  </div>
+</ng-container>

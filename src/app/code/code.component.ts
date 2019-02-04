@@ -16,7 +16,7 @@ This is the page showcasing all of the programming projects
 })
 export class CodeComponent implements OnInit {
   // projects: Observable<Program[]>;
-  projects: Program[];
+  projects: Program[] = [];
 
   constructor(private projectService: ProjectService) {}
 
@@ -25,8 +25,18 @@ export class CodeComponent implements OnInit {
       .getCodeProjects()
       .pipe(map(Object.values));*/
     this.projectService.getCodeProjects().subscribe(resp => {
-      this.projects = resp["Projects"];
-      console.log(this.projects);
+      console.log(resp["Projects"][0]);
+      for (let i = 0; i < resp["Projects"].length; i++) {
+        // this.projects[i] = resp["Projects"][i];
+        this.projects[i] = resp["Projects"][i];
+        // console.log(resp["Projects"][i]);
+      }
+      console.log("id????", this.projects[0].id);
+      /*this.projects = JSON.parse(resp["Projects"]);
+      for (let project in this.projects) {
+        console.log(project);
+      }*/
+      //console.log(this.projects);
     });
     //  let tmp = this.projectService.getConfigResponse();
 
